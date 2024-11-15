@@ -11,7 +11,7 @@
           <div class="col-12 mt-auto mb-5 text-center">
             <small>Festava Live Presents</small>
 
-            <h1 class="text-white mb-5">Night Live 2023</h1>
+            <h1 class="text-white mb-5">Night Live 2024</h1>
 
             <a class="btn custom-btn smoothscroll" href="#section_2">Let's begin</a>
           </div>
@@ -20,7 +20,7 @@
             <div class="date-wrap">
               <h5 class="text-white">
                 <i class="custom-icon bi-clock me-2"></i>
-                10 - 12<sup>th</sup>, Dec 2023
+                10 - 12<sup>th</sup>, Dec 2024
               </h5>
             </div>
 
