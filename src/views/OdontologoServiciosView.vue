@@ -66,7 +66,10 @@ function goToServicios() {
       <!-- Botones organizados en un contenedor -->
       <div class="button-group">
         <Button class="create-button" label="Crear servicio" icon="pi pi-plus" @click="handleCreate2" />
-        <Button label="Gestionar servicios" icon="pi pi-cog" class="manage-button" @click="goToServicios" />
+        <!-- <Button label="Gestionar servicios" icon="pi pi-cog" class="manage-button" @click="goToServicios" /> -->
+        <li v-if="authStore.token && authStore.role === 'odontologo'">
+                <router-link to="/servicios" >Gestionar Servicios</router-link>
+        </li>
         <Button label="Añadir servicio" icon="pi pi-plus-circle" class="add-button" @click="handleCreate" />
       </div>
 
@@ -184,5 +187,18 @@ function goToServicios() {
 /* Contenedor de la lista */
 .list-container {
   margin-top: 2rem;
+}
+
+li{
+  list-style-type: none;
+  background-color: #1745c5;
+  /* Naranja */
+  color: #ffffff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 </style>
